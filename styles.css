@@ -10,7 +10,6 @@
     scroll-behavior: smooth;
    }
 
-
 @font-face {
 	font-family: 'Yekan';
 	src:url('./fonts/Yekan-Font-master/Yekan.eot'); /* IE9 Compat Modes */
@@ -60,7 +59,6 @@ li {
     height: 100%;
     background-color: #cdd2fa;
     border-radius: 96% 4% 94% 6% / 0% 21% 79% 100% ;
-    /* opacity: .3; */
     position: absolute;
     top: 0;
     left: 0;
@@ -142,6 +140,11 @@ header{
     margin: 20px 0; 
 }
 
+.justify-text {
+    text-align: justify;
+    padding: 0 10px;
+}
+
 .btn {
     display: inline-block;
     margin: 20px 0;
@@ -197,9 +200,10 @@ header{
 svg {
     width: 100%;
 }
+
 /* start of gallery */
 
-#gallery {
+#gallery , #services{
     width: 100%;
     padding: 30px 5%;
 }
@@ -216,6 +220,7 @@ svg {
 }
 
 .card {
+    margin-top: 20px;
     background-color: #ffffff;
     width: 25%;
     border-radius: 30px;
