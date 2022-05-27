@@ -200,10 +200,16 @@ header{
 svg {
     width: 100%;
 }
+<<<<<<< HEAD
 
 /* start of gallery */
 
 #gallery , #services{
+=======
+/* start of gallery */
+
+#gallery {
+>>>>>>> 33915d68e58cc15f190995d9c7193132d1b8c97b
     width: 100%;
     padding: 30px 5%;
 }
@@ -220,7 +226,10 @@ svg {
 }
 
 .card {
+<<<<<<< HEAD
     margin-top: 20px;
+=======
+>>>>>>> 33915d68e58cc15f190995d9c7193132d1b8c97b
     background-color: #ffffff;
     width: 25%;
     border-radius: 30px;
