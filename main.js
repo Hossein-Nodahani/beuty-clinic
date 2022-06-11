@@ -4,10 +4,12 @@ let familyInput =document.querySelector(".family-input");
 let familyValidateText =document.querySelector(".family");
 let emailInput =document.querySelector(".email-input");
 let emailValidateText =document.querySelector(".email");
+let arrow = document.getElementById("arrow");
 
 nameInput.addEventListener("change" , validateName );
 familyInput.addEventListener("change" , validateFamily );
 emailInput.addEventListener("change" , validateEmail);
+arrow.addEventListener("click" , goToTop)
 
 function validateName(event){
     const name = event.target.value;
@@ -34,5 +36,18 @@ function validateEmail(){
     }else{
         emailValidateText.style.display ="none";
     }
+}
+
+
+function controlArrowVisibility(){
+    if (window.scrollY > 100){
+        arrow.style.opacity = "1";
+  }else{
+        arrow.style.opacity = "0";
+    }
+}
+
+function goToTop(){
+    window.scrollTo(0, 0);
 }
 
