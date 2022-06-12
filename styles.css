@@ -85,6 +85,7 @@ header{
     display: flex;
     justify-content: space-between;
     position: relative;
+    transition: right 1s;
 }
 
 .header-item {
@@ -118,6 +119,10 @@ header{
 
  .five:hover ~ hr{
     right:79%;
+ }
+
+ .hamberger-menu {
+    display: none;
  }
 
 .header-items hr {
@@ -350,3 +355,65 @@ footer p {
 
 
 
+@media screen and (max-width: 768px) {
+    .header-logo{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+
+    .header-items{
+        flex-direction: column;
+        position: fixed;
+        background-color: #cdd2fa;
+        width: 50%;
+        height: 100vh;
+        right: -50%;
+        top: 100px;
+        z-index: 10;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .header-logo , .hamberger-menu{
+        display: block;
+    }
+
+    .hamberger-menu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .move-menu{
+        right: 0;
+    }
+
+    .reotate45deg {
+        transform: rotate(45deg) translateY(11px);
+    }
+
+    .reotate-45deg {
+        transform: rotate(-45deg) translateY(-11px);
+    }
+
+
+    .hamberger-menu span{
+        width: 30px;
+        height: 4px;
+        background-color: rgb(234, 81, 213);
+        border-radius: 1.5px;
+        margin: 2px 0;
+        transition: all .5s;
+
+    }
+
+    .remove{
+        opacity: 0;
+    }
+
+    hr {
+        display: none;
+    }
+}

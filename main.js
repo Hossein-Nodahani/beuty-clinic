@@ -1,3 +1,9 @@
+let hambergerMenu = document.querySelector(".hamberger-menu");
+let menu = document.querySelector(".header-items");
+let firstLine = document.getElementById("first-line-hamberger");
+let secondLine = document.getElementById("second-line-hamberger");
+let thirdLine = document.getElementById("third-line-hamberger");
+
 let nameInput =document.querySelector(".name-input");
 let nameValidateText =document.querySelector(".name");
 let familyInput =document.querySelector(".family-input");
@@ -6,10 +12,28 @@ let emailInput =document.querySelector(".email-input");
 let emailValidateText =document.querySelector(".email");
 let arrow = document.getElementById("arrow");
 
+
 nameInput.addEventListener("change" , validateName );
 familyInput.addEventListener("change" , validateFamily );
 emailInput.addEventListener("change" , validateEmail);
 arrow.addEventListener("click" , goToTop)
+hambergerMenu.addEventListener("click" , controlMenu)
+menu.addEventListener("click" , controlMenu);
+
+
+
+
+function controlMenu (){
+    menu.classList.toggle("move-menu");
+    firstLine.classList.toggle("reotate45deg")
+    secondLine.classList.toggle("remove")
+    thirdLine.classList.toggle("reotate-45deg")
+
+}
+
+
+
+
 
 function validateName(event){
     const name = event.target.value;
