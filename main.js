@@ -28,12 +28,7 @@ function controlMenu (){
     firstLine.classList.toggle("reotate45deg")
     secondLine.classList.toggle("remove")
     thirdLine.classList.toggle("reotate-45deg")
-
 }
-
-
-
-
 
 function validateName(event){
     const name = event.target.value;
@@ -61,7 +56,6 @@ function validateEmail(){
         emailValidateText.style.display ="none";
     }
 }
-
 
 function controlArrowVisibility(){
     if (window.scrollY > 100){
