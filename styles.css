@@ -138,7 +138,7 @@ header{
 
 .home-container {
     display: flex;
-    margin: 100px auto;
+    margin: 50px auto 40px;
     justify-content: space-around;
 }
 
@@ -190,9 +190,10 @@ header{
     color: #ff64ae;
 }
 
-.watch-video {
+.watch-video , .watch-video div{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .watch-video span {
@@ -231,7 +232,7 @@ svg {
 }
 
 .card {
-    margin-top: 20px;
+    margin-top: 50px;
     background-color: #ffffff;
     width: 25%;
     border-radius: 30px;
@@ -381,6 +382,10 @@ footer p {
         display: block;
     }
 
+    .header-logo{ 
+        transform: scale(.7);
+    }
+
     .hamberger-menu{
         z-index: 11;
         display: flex;
@@ -431,5 +436,21 @@ footer p {
         width: 80%;
         text-align: center;
     }
+
+    .card p {
+        text-align: justify;
+    }
     
+    .watch-video  {
+        flex-direction: column;
+    }
+
+    .svg{
+        padding-left: 15px;
+        margin: 0;
+    }
+
+    footer * {
+        transform: scale(.95);
+    }
 }
